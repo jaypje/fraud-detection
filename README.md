@@ -60,29 +60,6 @@ I compared three models on validation AUC-PR: Random Forest (0.853), XGBoost (0.
 4. Make the cost of a missed fraud depend on the transaction amount.
 5. Try time-based validation on data covering weeks or months.
 
-## How to run it
-
-```bash
-git clone <your-repo-url>
-cd <your-repo-folder>
-pip install -r requirements.txt
-```
-
-1. Download `creditcard.csv` from [Kaggle](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) and put it at `data/creditcard.csv`. It's too big for GitHub, so it isn't in the repo.
-2. Make an empty `figures/` folder if you don't have one.
-3. Open `fraud_detection.ipynb` and run all the cells.
-
-## Repo structure
-
-```
-.
-├── fraud_detection.ipynb
-├── requirements.txt
-├── README.md
-├── data/        # put creditcard.csv here (not committed)
-└── figures/     # plots saved by the notebook
-```
-
 ## Tools
 
 Python, pandas, NumPy, scikit-learn, XGBoost, SHAP, matplotlib.
